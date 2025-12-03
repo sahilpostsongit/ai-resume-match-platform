@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+instance/
+.venv/
+
+# Environment files
+.env
+*.env
+
+# VS Code
+.vscode/
+
+# Node / frontend
+node_modules/
+dist/
+build/
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini

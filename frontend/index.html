@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>AI Resume Match</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <h1>AI Resume Match</h1>
+        <p>Upload your resume text and find the most relevant roles instantly.</p>
+      </section>
+      <section class="grid">
+        <form id="resume-form" class="card">
+          <h2>Resume Submission</h2>
+          <label>
+            Name
+            <input type="text" name="candidate_name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Resume Text
+            <textarea name="resume_text" rows="8" required></textarea>
+          </label>
+          <label>
+            Target Job IDs (optional, comma separated)
+            <input type="text" name="target_job_ids" />
+          </label>
+          <button type="submit">Match Resume</button>
+          <p id="form-status"></p>
+        </form>
+
+        <div class="card">
+          <h2>Match Results</h2>
+          <ul id="results"></ul>
+        </div>
+      </section>
+      <section class="card">
+        <h2>Current Open Roles</h2>
+        <ul id="jobs-list"></ul>
+      </section>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
+
+
+
+
+
